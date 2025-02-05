@@ -357,7 +357,7 @@
     },
 
     {
-      "description": "Round brackets () close",
+      "description": "Parentheses () close",
       "manipulators": [
         {
           "type": "basic",
@@ -380,7 +380,7 @@
     },
 
     {
-      "description": "Curly brackets {} close",
+      "description": "Braces {} close",
       "manipulators": [
         {
           "type": "basic",
