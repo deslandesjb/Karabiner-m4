@@ -334,7 +334,7 @@
     },
 
     {
-      "description": "backslash ` close",
+      "description": "Backtick ` close",
       "manipulators": [
         {
           "type": "basic",
