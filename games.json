@@ -64,6 +64,93 @@
           ]
         }
       ]
+    },
+    {
+      "description": "NDS states",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^net.kuribo64.melonDS"]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f5",
+              "modifiers": ["shift"]
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^net.kuribo64.melonDS"]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": ["command", "shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f6",
+              "modifiers": ["shift"]
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^net.kuribo64.melonDS"]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f5"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^net.kuribo64.melonDS"]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": ["command", "shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f6"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
