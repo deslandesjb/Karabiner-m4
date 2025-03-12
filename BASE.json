@@ -9,8 +9,7 @@
           "from": {
             "key_code": "f1",
             "modifiers": {
-              "mandatory": ["left_command"],
-              "optional": ["caps_lock"]
+              "mandatory": ["left_command"]
             }
           },
           "to": [
@@ -582,7 +581,7 @@
     },
 
     {
-      "description": "command + tab AltTab app",
+      "description": "AltTab: command + Tab => command + backslash",
       "manipulators": [
         {
           "type": "basic",
@@ -594,8 +593,15 @@
           },
           "to": [
             {
-              "key_code": "tab",
-              "modifiers": ["left_shift", "left_option", "left_control", "left_command"]
+              "repeat": true,
+              "key_code": "backslash",
+              "modifiers": ["command"]
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "key_code": "left_control",
+              "modifiers": ["command"]
             }
           ]
         }
