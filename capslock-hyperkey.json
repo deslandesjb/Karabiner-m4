@@ -2,7 +2,7 @@
   "title": "Capslock to Hyperkey / Delete Forward",
   "rules": [
     {
-      "description": "Caps Lock to Hyperkey / Delete Forward",
+      "description": "* Caps Lock to Hyperkey / Delete Forward",
       "manipulators": [
         {
           "type": "basic",
