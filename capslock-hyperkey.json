@@ -1,8 +1,8 @@
 {
-  "title": "Kimura Capslock",
+  "title": "Capslock to Hyperkey / Delete Forward",
   "rules": [
     {
-      "description": "Caps Lock to Delete Forward and Hyper Key",
+      "description": "Caps Lock to Hyperkey / Delete Forward",
       "manipulators": [
         {
           "type": "basic",
