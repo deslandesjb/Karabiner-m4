@@ -22,7 +22,10 @@
             {
               "key_code": "delete_forward"
             }
-          ]
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 200
+          }
         },
         {
           "type": "basic",

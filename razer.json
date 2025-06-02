@@ -146,6 +146,10 @@
           ],
           "conditions": [
             {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
+            },
+            {
               "type": "device_if",
               "identifiers": [
                 {
