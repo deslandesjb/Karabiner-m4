@@ -163,6 +163,36 @@
               ]
             }
           ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "0",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "product_id": 180,
+                  "vendor_id": 5426
+                },
+                {
+                  "product_id": 181,
+                  "vendor_id": 1678
+                }
+              ]
+            }
+          ]
         }
       ]
     }

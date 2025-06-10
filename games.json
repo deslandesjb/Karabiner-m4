@@ -2,7 +2,7 @@
   "title": "Games",
   "rules": [
     {
-      "description": "WoW tab",
+      "description": "WoW config",
       "manipulators": [
         {
           "conditions": [
@@ -58,8 +58,206 @@
           },
           "to": [
             {
-              "key_code": "tab",
-              "modifiers": ["left_command"]
+              "repeat": true,
+              "key_code": "backslash",
+              "modifiers": ["command"]
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "key_code": "left_control",
+              "modifiers": ["command"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter"
+          },
+          "to": [
+            {
+              "key_code": "hyphen"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "product_id": 180,
+                  "vendor_id": 5426
+                },
+                {
+                  "product_id": 181,
+                  "vendor_id": 1678
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": ["command"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "product_id": 180,
+                  "vendor_id": 5426
+                },
+                {
+                  "product_id": 181,
+                  "vendor_id": 1678
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "4",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "5",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "non_us_backslash",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "non_us_backslash",
+              "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
             }
           ]
         }
@@ -317,36 +515,6 @@
           "to": [
             {
               "key_code": "keypad_9"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com.blizzard.worldofwarcraft"]
-            },
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "product_id": 180,
-                  "vendor_id": 5426
-                },
-                {
-                  "product_id": 181,
-                  "vendor_id": 1678
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "return_or_enter"
-          },
-          "to": [
-            {
-              "key_code": "hyphen"
             }
           ],
           "conditions": [

@@ -120,7 +120,7 @@
           },
           "to": [
             {
-              "key_code": "p",
+              "key_code": "left_arrow",
               "modifiers": ["command", "option"]
             }
           ],
@@ -131,7 +131,27 @@
             }
           ]
         },
-
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": ["command", "option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": ["command", "option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^company\\.thebrowser\\.Browser$"]
+            }
+          ]
+        },
         {
           "type": "basic",
           "from": {
