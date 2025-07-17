@@ -1,8 +1,8 @@
 {
-  "title": "Mac app cmd-2 ARC cmd-3 CURSOR",
+  "title": "Mac app cmd-1 Finder cmd-2 ARC cmd-3 CURSOR",
   "rules": [
     {
-      "description": "Frontmost Apps tab cmd-2 ARC cmd-3 CURSOR",
+      "description": "Frontmost Apps tab cmd-1 Finder cmd-2 ARC cmd-3 CURSOR",
       "manipulators": [
         {
           "type": "basic",
@@ -21,6 +21,27 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.apple\\.finder$"]
+            }
+          ]
+        },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "non_us_backslash",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open ~/Downloads"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
               "bundle_identifiers": ["^com\\.apple\\.finder$"]
             }
           ]

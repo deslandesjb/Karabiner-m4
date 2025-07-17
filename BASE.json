@@ -624,6 +624,29 @@
               "modifiers": ["command"]
             }
           ]
+        },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": ["command", "shift"]
+            }
+          },
+          "to": [
+            {
+              "repeat": true,
+              "key_code": "backslash",
+              "modifiers": ["command", "shift"]
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "key_code": "left_control",
+              "modifiers": ["command"]
+            }
+          ]
         }
       ]
     },
