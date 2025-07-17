@@ -14,6 +14,40 @@
           },
           "to": [
             {
+              "shell_command": "open ~/Downloads"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": ["^com\\.apple\\.finder$"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "non_us_backslash",
+            "modifiers": {
+              "mandatory": ["option"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open ~/Developer"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "non_us_backslash",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
               "key_code": "tab",
               "modifiers": ["left_control"]
             }
@@ -26,26 +60,6 @@
           ]
         },
 
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "non_us_backslash",
-            "modifiers": {
-              "mandatory": ["command"]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open ~/Downloads"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": ["^com\\.apple\\.finder$"]
-            }
-          ]
-        },
         {
           "type": "basic",
           "from": {
