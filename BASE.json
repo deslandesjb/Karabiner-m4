@@ -265,6 +265,35 @@
           ],
           "type": "basic"
         },
+
+        {
+          "from": {
+            "key_code": "play_or_pause",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "play_or_pause"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "f8",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f8"
+            }
+          ],
+          "type": "basic"
+        },
         {
           "conditions": [
             {
@@ -525,7 +554,6 @@
         }
       ]
     },
-
     {
       "description": "Backtick ` close",
       "manipulators": [
@@ -616,29 +644,6 @@
               "repeat": true,
               "key_code": "backslash",
               "modifiers": ["command"]
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "key_code": "left_control",
-              "modifiers": ["command"]
-            }
-          ]
-        },
-
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "tab",
-            "modifiers": {
-              "mandatory": ["command", "shift"]
-            }
-          },
-          "to": [
-            {
-              "repeat": true,
-              "key_code": "backslash",
-              "modifiers": ["command", "shift"]
             }
           ],
           "to_after_key_up": [
