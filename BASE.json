@@ -241,7 +241,34 @@
     },
 
     {
-      "description": "Spotify controls",
+      "description": "Finder switch windows with cmd + @",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "non_us_backslash",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.apple\\.finder$"]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "description": "Spotify & YT Music controls",
       "manipulators": [
         {
           "from": {
@@ -275,10 +302,10 @@
           },
           "to": [
             {
-              "key_code": "play_or_pause"
+              "key_code": "b",
+              "modifiers": ["left_shift", "left_option"]
             }
-          ],
-          "type": "basic"
+          ]
         },
         {
           "from": {
@@ -289,10 +316,10 @@
           },
           "to": [
             {
-              "key_code": "f8"
+              "key_code": "b",
+              "modifiers": ["left_shift", "left_option"]
             }
-          ],
-          "type": "basic"
+          ]
         },
         {
           "conditions": [
