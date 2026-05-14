@@ -2,7 +2,7 @@
   "title": "Base Hyperkey",
   "rules": [
     {
-      "description": "Hyperkey ✱ - General",
+      "description": "✱✱ Hyperkey ✱✱ - General",
       "manipulators": [
         {
           "description": "capslock = esc(click) | hyper(hold)",
@@ -186,12 +186,7 @@
           "to": [
             {
               "key_code": "equal_sign",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
+              "modifiers": ["right_command", "right_control"]
             }
           ]
         },
@@ -212,7 +207,7 @@
           },
           "to": [
             {
-              "key_code": "6",
+              "key_code": "0",
               "modifiers": [
                 "right_command",
                 "right_control",
@@ -410,42 +405,20 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+
+    {
+      "description": "Hyperkey ✱ - Classic",
+      "manipulators": [
         {
-          "description": "hyper cmd X (-> ,)",
+          "description": "hyper non_us_backslash -> n",
           "type": "basic",
           "from": {
-            "key_code": "x",
+            "key_code": "non_us_backslash",
             "modifiers": {
               "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "m",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd Tab (-> P)",
-          "type": "basic",
-          "from": {
-            "key_code": "tab",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
                 "right_command",
                 "right_control",
                 "right_shift",
@@ -464,20 +437,14 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "Hyperkey ✱ - Option",
-      "manipulators": [
+        },
         {
-          "description": "hyper opt Tab (-> O)",
+          "description": "hyper delete_forward -> o",
           "type": "basic",
           "from": {
-            "key_code": "tab",
+            "key_code": "delete_forward",
             "modifiers": {
               "mandatory": [
-                "left_option",
                 "right_command",
                 "right_control",
                 "right_shift",
@@ -494,32 +461,6 @@
                 "right_shift",
                 "right_option"
               ]
-            }
-          ]
-        }
-      ]
-    },
-
-    {
-      "description": "Hyperkey ✱ - Classic",
-      "manipulators": [
-        {
-          "description": "capslock",
-          "type": "basic",
-          "from": {
-            "key_code": "non_us_backslash",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "caps_lock"
             }
           ]
         },
