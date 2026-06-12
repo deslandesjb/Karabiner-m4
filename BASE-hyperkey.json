@@ -465,32 +465,6 @@
           ]
         },
         {
-          "description": "hyper Q",
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f16",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
           "description": "hyper S",
           "type": "basic",
           "from": {
@@ -529,6 +503,137 @@
             {
               "key_code": "right_arrow",
               "modifiers": ["command", "option"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyperkey ✱ - Apps",
+      "manipulators": [
+        {
+          "description": "hyper A (physique) -> Arc",
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -b company.thebrowser.Browser"
+            }
+          ]
+        },
+        {
+          "description": "hyper Q (physique) -> f16 (pour que hyper q fonctionne)",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f16",
+              "modifiers": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "hyper Z -> Zed",
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -b dev.zed.Zed"
+            }
+          ]
+        },
+        {
+          "description": "hyper W -> WhatsApp",
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -b net.whatsapp.WhatsApp"
+            }
+          ]
+        },
+        {
+          "description": "hyper X -> Spark",
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -b com.readdle.smartemail-Mac"
+            }
+          ]
+        },
+        {
+          "description": "hyper C -> Teams",
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -b com.microsoft.teams2"
             }
           ]
         }
