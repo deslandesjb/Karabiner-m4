@@ -34,299 +34,7 @@
       "description": "Hyperkey ✱ - Command",
       "manipulators": [
         {
-          "description": "Hyperkey cmd 1 (-> ^)",
-          "type": "basic",
-          "from": {
-            "key_code": "1",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "bracket_left",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd 2 (-> $)",
-          "type": "basic",
-          "from": {
-            "key_code": "2",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "bracket_right",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd 3 (-> ù)",
-          "type": "basic",
-          "from": {
-            "key_code": "3",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "quote",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd 4 (-> ;)",
-          "type": "basic",
-          "from": {
-            "key_code": "4",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "comma",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd 5 (-> :)",
-          "type": "basic",
-          "from": {
-            "key_code": "5",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd A (-> =)",
-          "type": "basic",
-          "from": {
-            "key_code": "q",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": ["right_command", "right_control"]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd Z (-> -)",
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "0",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd E (-> ))",
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "minus",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd R (-> à)",
-          "type": "basic",
-          "from": {
-            "key_code": "r",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "0",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd Q (-> ç)",
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "9",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd S (-> !)",
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "slash",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd D (-> è)",
+          "description": "hyper cmd d -> hyper z (lu w)",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -342,61 +50,7 @@
           },
           "to": [
             {
-              "key_code": "7",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd F (-> _)",
-          "type": "basic",
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "8",
-              "modifiers": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "hyper cmd W (-> *)",
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "backslash",
+              "key_code": "w",
               "modifiers": [
                 "right_command",
                 "right_control",
@@ -413,7 +67,7 @@
       "description": "Hyperkey ✱ - Classic",
       "manipulators": [
         {
-          "description": "hyper non_us_backslash -> n",
+          "description": "hyper non_us_backslash -> q",
           "type": "basic",
           "from": {
             "key_code": "non_us_backslash",
@@ -428,7 +82,7 @@
           },
           "to": [
             {
-              "key_code": "p",
+              "key_code": "q",
               "modifiers": [
                 "right_command",
                 "right_control",
@@ -439,7 +93,7 @@
           ]
         },
         {
-          "description": "hyper delete_forward -> o",
+          "description": "hyper delete_forward -> g",
           "type": "basic",
           "from": {
             "key_code": "delete_forward",
@@ -454,55 +108,13 @@
           },
           "to": [
             {
-              "key_code": "o",
+              "key_code": "g",
               "modifiers": [
                 "right_command",
                 "right_control",
                 "right_shift",
                 "right_option"
               ]
-            }
-          ]
-        },
-        {
-          "description": "hyper S",
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": ["command", "option"]
-            }
-          ]
-        },
-        {
-          "description": "hyper D",
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": ["command", "option"]
             }
           ]
         }
