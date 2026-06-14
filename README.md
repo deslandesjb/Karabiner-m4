@@ -2,47 +2,53 @@
 
 ## Overview
 
-Custom keyboard configurations for macOS using Karabiner Elements.  
-⚠️ AZERTY keyboard.
+Configuration personnalisée pour macOS via Karabiner Elements.  
+⚠️ Clavier **AZERTY**.
 
 ## Installation
 
-1. Download and install [Karabiner Elements](https://karabiner-elements.pqrs.org/)
-2. Import the configuration files into Karabiner Elements
+1. Télécharger et installer [Karabiner Elements](https://karabiner-elements.pqrs.org/)
+2. Importer les fichiers JSON dans `~/.config/karabiner/assets/complex_modifications/`
 
-## Available Configurations
+## Usage Actuel
 
-### Base.json
+### ✱ Hyperkey ✱ (BASE-hyperkey.json)
 
-#### System Controls
+- **General** : `Caps Lock` utilisé comme Hyper (hold) ou Escape (tap).
+- **Command** : `Hyper + Cmd + D` déclenche `Hyper + Z` (raccourci de secours).
+- **Classic** :
+  - `Hyper + §` : Mappé sur `Q`.
+  - `Hyper + Suppr` : Mappé sur `G`.
+- **Apps** :
+  - `Hyper + A` : **Arc**
+  - `Hyper + Z` : **Zed**
+  - `Hyper + W` : **WhatsApp**
+  - `Hyper + X` : **Spark**
+  - `Hyper + C` : **Teams**
+  - `Hyper + Cmd + Z` : **cmux**
 
-- Keyboard backlight: `cmd + F1/F2`
-- Media controls: Spotify-exclusive media keys
+### ✱ Système & Input ✱ (BASE.json)
 
-#### Input Shortcuts
+- **Spotify & YT Music** : Contrôles multimédia dédiés.
+- **Backtick** : La touche `` ` `` s'auto-ferme et place le curseur au milieu.
+- **Emoji** : Double pression sur la touche `.` pour ouvrir le sélecteur d'emoji Raycast.
 
-- Double tap `:` : Opens emoji picker (_Raycast_)
-- Auto-closing characters:
-  - Auto-closes and places cursor between : Backtick `` ` `` Parentheses `()` and Braces `{}`
+### ✱ Navigation ✱ (karabiner-cmd-2-3.json)
 
-### karabiner-cmd-2-3.json
+- `Cmd + @` : Ouvre **Finder** / Cycle à travers les onglets Finder.
+- `Cmd + 2` : Ouvre **Arc** / Cycle à travers les fenêtres Arc.
+- `Cmd + 3` : Ouvre **Cursor** / Cycle à travers les fenêtres Cursor.
+- `Cmd + 1` : Retour au bureau 1.
 
-#### App Navigation & Window Management
+## Touches Hyper Disponibles
 
-- `cmd + @`:
-  - Opens Finder
-  - Cycles through Finder tabs when Finder is frontmost app
-- `cmd + 2`:
-  - Opens Arc browser (virtual desktop 2)
-  - Cycles through Arc windows when frontmost app (_via AltTab_)
-- `cmd + 3`:
-  - Opens Cursor IDE (virtual desktop 3)
-  - Cycles through Cursor windows when frontmost app (_via AltTab_)
-- `cmd + 1`:
-  - Returns to virtual desktop 1
+Section aide-mémoire pour les futures configurations :
 
-## Dependencies
+- **Libres** : `E`, `R`, `T`, `Y`, `U`, `I`, `O`, `P`, `S`, `D`, `F`, `G`, `H`, `J`, `K`, `L`, `V`, `B`, `N`
+- **Utilisées** : `A`, `Z`, `W`, `X`, `C`, `Q` (Classic)
+
+## Dépendances
 
 - Karabiner Elements
-- AltTab
-- Raycast
+- AltTab (pour le cycle des fenêtres)
+- Raycast (pour les emojis)

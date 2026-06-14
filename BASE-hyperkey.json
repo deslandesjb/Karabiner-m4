@@ -248,6 +248,27 @@
               "shell_command": "open -b com.microsoft.teams2"
             }
           ]
+        },
+        {
+          "description": "hyper + cmd_gauche + Z -> cmux",
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -b com.cmuxterm.app"
+            }
+          ]
         }
       ]
     }
