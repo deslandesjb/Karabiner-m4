@@ -185,7 +185,7 @@
           },
           "to": [
             {
-              "shell_command": "open -b dev.zed.Zed"
+              "shell_command": "[ -n \"$(/usr/bin/lsappinfo info -app dev.zed.Zed)\" ] && /usr/bin/open -b dev.zed.Zed"
             }
           ]
         },
