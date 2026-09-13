@@ -8,36 +8,58 @@
           "type": "basic",
           "from": {
             "key_code": "f1",
-            "modifiers": { "mandatory": ["left_command"] }
-          },
-          "to": [{ "key_code": "illumination_decrement" }]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f2",
-            "modifiers": { "mandatory": ["left_command"] }
-          },
-          "to": [{ "key_code": "illumination_increment" }]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f1",
-            "modifiers": { "mandatory": ["left_option"] }
+            "modifiers": {
+              "mandatory": ["left_command"]
+            }
           },
           "to": [
-            { "key_code": "f1", "modifiers": ["left_shift", "left_option"] }
+            {
+              "key_code": "illumination_decrement"
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
             "key_code": "f2",
-            "modifiers": { "mandatory": ["left_option"] }
+            "modifiers": {
+              "mandatory": ["left_command"]
+            }
           },
           "to": [
-            { "key_code": "f2", "modifiers": ["left_shift", "left_option"] }
+            {
+              "key_code": "illumination_increment"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f1",
+            "modifiers": {
+              "mandatory": ["left_option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f1",
+              "modifiers": ["left_shift", "left_option"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f2",
+            "modifiers": {
+              "mandatory": ["left_option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2",
+              "modifiers": ["left_shift", "left_option"]
+            }
           ]
         }
       ]
@@ -47,7 +69,9 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": { "key_code": "play_or_pause" },
+          "from": {
+            "key_code": "play_or_pause"
+          },
           "to": [
             {
               "shell_command": "osascript -e 'tell application \"Spotify\" to playpause'"
@@ -56,7 +80,9 @@
         },
         {
           "type": "basic",
-          "from": { "key_code": "f8" },
+          "from": {
+            "key_code": "f8"
+          },
           "to": [
             {
               "shell_command": "osascript -e 'tell application \"Spotify\" to playpause'"
@@ -67,20 +93,30 @@
           "type": "basic",
           "from": {
             "key_code": "play_or_pause",
-            "modifiers": { "mandatory": ["command"] }
+            "modifiers": {
+              "mandatory": ["command"]
+            }
           },
           "to": [
-            { "key_code": "b", "modifiers": ["left_shift", "left_option"] }
+            {
+              "key_code": "b",
+              "modifiers": ["left_shift", "left_option"]
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
             "key_code": "f8",
-            "modifiers": { "mandatory": ["command"] }
+            "modifiers": {
+              "mandatory": ["command"]
+            }
           },
           "to": [
-            { "key_code": "b", "modifiers": ["left_shift", "left_option"] }
+            {
+              "key_code": "b",
+              "modifiers": ["left_shift", "left_option"]
+            }
           ]
         },
         {
@@ -88,12 +124,20 @@
           "conditions": [
             {
               "type": "device_if",
-              "identifiers": [{ "product_id": 45929, "vendor_id": 1133 }]
+              "identifiers": [
+                {
+                  "product_id": 45929,
+                  "vendor_id": 1133
+                }
+              ]
             }
           ],
           "from": {
             "key_code": "volume_increment",
-            "modifiers": { "mandatory": ["command"], "optional": ["any"] }
+            "modifiers": {
+              "mandatory": ["command"],
+              "optional": ["any"]
+            }
           },
           "to": [
             {
@@ -106,12 +150,20 @@
           "conditions": [
             {
               "type": "device_if",
-              "identifiers": [{ "product_id": 45929, "vendor_id": 1133 }]
+              "identifiers": [
+                {
+                  "product_id": 45929,
+                  "vendor_id": 1133
+                }
+              ]
             }
           ],
           "from": {
             "key_code": "volume_decrement",
-            "modifiers": { "mandatory": ["command"], "optional": ["any"] }
+            "modifiers": {
+              "mandatory": ["command"],
+              "optional": ["any"]
+            }
           },
           "to": [
             {
@@ -126,11 +178,19 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": { "key_code": "backslash" },
+          "from": {
+            "key_code": "backslash"
+          },
           "to": [
-            { "key_code": "backslash" },
-            { "key_code": "backslash" },
-            { "key_code": "left_arrow" }
+            {
+              "key_code": "backslash"
+            },
+            {
+              "key_code": "backslash"
+            },
+            {
+              "key_code": "left_arrow"
+            }
           ]
         }
       ]
@@ -141,11 +201,20 @@
         {
           "type": "basic",
           "conditions": [
-            { "type": "variable_if", "name": "period pressed", "value": 1 }
+            {
+              "type": "variable_if",
+              "name": "period pressed",
+              "value": 1
+            }
           ],
-          "from": { "key_code": "period" },
+          "from": {
+            "key_code": "period"
+          },
           "to": [
-            { "key_code": "delete_or_backspace", "hold_down_milliseconds": 10 },
+            {
+              "key_code": "delete_or_backspace",
+              "hold_down_milliseconds": 10
+            },
             {
               "key_code": "y",
               "modifiers": [
@@ -161,19 +230,70 @@
           "type": "basic",
           "from": {
             "key_code": "period",
-            "modifiers": { "optional": ["any"] }
+            "modifiers": {
+              "optional": ["any"]
+            }
           },
-          "to": [{ "set_variable": { "name": "period pressed", "value": 1 } }],
-          "to_if_held_down": [{ "key_code": "period" }],
-          "parameters": { "basic.to_if_held_down_threshold_milliseconds": 0 },
+          "to": [
+            {
+              "set_variable": {
+                "name": "period pressed",
+                "value": 1
+              }
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "period"
+            }
+          ],
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 0
+          },
           "to_delayed_action": {
             "to_if_invoked": [
-              { "set_variable": { "name": "period pressed", "value": 0 } }
+              {
+                "set_variable": {
+                  "name": "period pressed",
+                  "value": 0
+                }
+              }
             ],
             "to_if_canceled": [
-              { "set_variable": { "name": "period pressed", "value": 0 } }
+              {
+                "set_variable": {
+                  "name": "period pressed",
+                  "value": 0
+                }
+              }
             ]
           }
+        }
+      ]
+    },
+    {
+      "description": "Orca: cmd+virgule -> Open Settings",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.stablyai\\.orca$"]
+            }
+          ],
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": ["left_shift", "left_option", "left_command"]
+            }
+          ]
         }
       ]
     }
