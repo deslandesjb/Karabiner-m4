@@ -250,7 +250,7 @@
           ]
         },
         {
-          "description": "hyper A -> cmux",
+          "description": "hyper A -> orca",
           "type": "basic",
           "from": {
             "key_code": "q",
@@ -265,7 +265,29 @@
           },
           "to": [
             {
-              "shell_command": "open -b com.cmuxterm.app"
+              "shell_command": "[ -n \"$(/usr/bin/lsappinfo info -app com.stablyai.orca)\" ] && /usr/bin/open -b com.stablyai.orca"
+            }
+          ]
+        },
+        {
+          "description": "hyper A -> cmux",
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option",
+
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "[ -n \"$(/usr/bin/lsappinfo info -app com.cmuxterm.app)\" ] && /usr/bin/open -b com.cmuxterm.app"
             }
           ]
         }
