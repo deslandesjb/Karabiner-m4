@@ -121,10 +121,147 @@
       ]
     },
     {
+      "description": "Hyperkey ✱ - Opt",
+      "manipulators": [
+        {
+          "description": "hyper opt a -> rctrl ropt rcmd a",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": ["right_control", "right_option", "right_command"]
+            }
+          ]
+        },
+        {
+          "description": "hyper opt z -> rctrl ropt rcmd z",
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": ["right_control", "right_option", "right_command"]
+            }
+          ]
+        },
+        {
+          "description": "hyper opt 1 -> rctrl ropt rcmd 1",
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": ["right_control", "right_option", "right_command"]
+            }
+          ]
+        },
+        {
+          "description": "hyper opt 2 -> rctrl ropt rcmd 2",
+          "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": ["right_control", "right_option", "right_command"]
+            }
+          ]
+        },
+        {
+          "description": "hyper opt 3 -> rctrl ropt rcmd 3",
+          "type": "basic",
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": ["right_control", "right_option", "right_command"]
+            }
+          ]
+        },
+        {
+          "description": "hyper opt 4 -> rctrl ropt rcmd 4",
+          "type": "basic",
+          "from": {
+            "key_code": "4",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": ["right_control", "right_option", "right_command"]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Hyperkey ✱ - Apps",
       "manipulators": [
         {
-          "description": "hyper & (physique) -> Arc",
+          "description": "hyper & (physique) -> Zen",
           "type": "basic",
           "from": {
             "key_code": "1",
@@ -139,7 +276,7 @@
           },
           "to": [
             {
-              "shell_command": "open -b company.thebrowser.Browser"
+              "shell_command": "open -b app.zen-browser.zen"
             }
           ]
         },
@@ -230,7 +367,7 @@
           ]
         },
         {
-          "description": "hyper C -> Teams",
+          "description": "hyper C -> Slack",
           "type": "basic",
           "from": {
             "key_code": "c",
@@ -245,7 +382,7 @@
           },
           "to": [
             {
-              "shell_command": "[ -n \"$(/usr/bin/lsappinfo info -app com.microsoft.teams2)\" ] && /usr/bin/open -b com.microsoft.teams2"
+              "shell_command": "[ -n \"$(/usr/bin/lsappinfo info -app com.tinyspeck.slackmacgap)\" ] && /usr/bin/open -b com.tinyspeck.slackmacgap"
             }
           ]
         },
@@ -290,6 +427,91 @@
               "shell_command": "[ -n \"$(/usr/bin/lsappinfo info -app com.cmuxterm.app)\" ] && /usr/bin/open -b com.cmuxterm.app"
             }
           ]
+        },
+        {
+          "description": "hyper E -> ctrl tab",
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_shift",
+                "right_option"
+              ],
+              "optional": ["right_control"]
+            }
+          },
+          "to": [{ "key_code": "tab" }]
+        }
+      ]
+    },
+    {
+      "description": "Hyperkey ✱ - Mouse",
+      "manipulators": [
+        {
+          "description": "hyper up -> wheel up",
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [{ "mouse_key": { "vertical_wheel": -64 } }]
+        },
+        {
+          "description": "hyper down -> wheel down",
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [{ "mouse_key": { "vertical_wheel": 64 } }]
+        },
+        {
+          "description": "hyper left -> wheel left",
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [{ "mouse_key": { "horizontal_wheel": 64 } }]
+        },
+        {
+          "description": "hyper right -> wheel right",
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [{ "mouse_key": { "horizontal_wheel": -64 } }]
         }
       ]
     }
