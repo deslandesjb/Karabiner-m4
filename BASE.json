@@ -296,6 +296,32 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Finder: cmd+shift+c -> copy path",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.apple\\.finder$"]
+            }
+          ],
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": ["left_command", "left_shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": ["left_control", "left_option"]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
